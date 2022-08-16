@@ -99,6 +99,7 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
           text-transform: capitalize;
           transition: 0.3s ease-in-out;
           position: relative;
+          color: #000;
         }
 
         .link:after {
