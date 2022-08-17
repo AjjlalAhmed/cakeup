@@ -7,6 +7,7 @@
   <div class="see">
     <!-- Title  -->
     <h1 class="title">we can't see you</h1>
+    <!-- Title  -->
   </div>
   <!-- See  -->
 </template>
@@ -14,11 +15,12 @@
 
 
 <style lang="scss" scoped>
+// Styles
 .see {
   display: grid;
   place-items: center;
   max-width: 1500px;
-  margin:50px auto;
+  margin: 50px auto;
   background: url("../assets/images/see.jpg");
   background-position: center;
   background-size: cover;

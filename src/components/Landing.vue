@@ -28,8 +28,6 @@ const data = ref([
     text: "our customer service is absolutely exquisite.",
   },
 ]);
-
-
 </script>
 
 <template>
@@ -51,13 +49,15 @@ const data = ref([
           </div>
         </div>
       </SplideSlide>
+      <!-- SplideSlide  -->
     </Splide>
-   <!-- Splide  -->
+    <!-- Splide  -->
   </div>
   <!-- Landing  -->
 </template>
 
 <style lang="scss" scoped>
+// Styles
 .landing {
   max-width: 1500px;
   margin: auto;
@@ -71,7 +71,6 @@ const data = ref([
       object-fit: cover;
       border-radius: 5px;
       filter: brightness(90%);
-    
     }
     .card {
       display: grid;
@@ -80,7 +79,7 @@ const data = ref([
       position: absolute;
       bottom: 30px;
       .card-wrapper {
-        background: #fff;
+        background-color: #fcf9f4;
         padding: 20px;
         border-radius: 5px;
         border: 1px solid #5555;

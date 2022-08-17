@@ -28,8 +28,17 @@ import See from "../components/See.vue";
 </template>
 
 <style lang="scss" scoped>
+// Styles
 .home {
   padding: 0px 20px;
+}
+
+// Media queries
+
+@media only screen and (max-width: 500px) {
+  .home {
+    padding: 10px;
+  }
 }
 </style>
 

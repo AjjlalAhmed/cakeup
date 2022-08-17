@@ -46,19 +46,25 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
       </ul>
       <!-- Action buttons  -->
       <div :class="{ 'action-btns': true, hide: showMenu }">
+        <!-- Input  -->
         <div class="input">
           <label for="search"
             ><i class="fa fa-search" aria-hidden="true"></i
           ></label>
           <input id="search" type="text" placeholder="Search" />
         </div>
+        <!-- Buttons  -->
         <button>
           <i class="fa fa-shopping-cart" aria-hidden="true"></i> cart
         </button>
-        <button><i class="fa fa-user" aria-hidden="true"></i> user</button>
+        <button>
+          <i class="fa fa-user" aria-hidden="true"></i>
+          user
+        </button>
       </div>
       <!-- Menu  -->
       <div @click="toggleNavbar" class="menu">
+        <!-- Bars  -->
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -70,6 +76,7 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
 
 
 <style lang="scss" scoped>
+// Styles
 .header {
   padding: 20px;
   .nav {
@@ -127,7 +134,6 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
       justify-self: right;
       gap: 20px;
       .input {
-        // border: 1px solid #3333;
         padding: 5px;
         border-radius: 5px;
         label {
@@ -139,7 +145,7 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
         input {
           border: 0px;
           max-width: 90px;
-             font-size: 1rem;
+          font-size: 1rem;
           &:focus {
             outline: none;
           }
@@ -198,9 +204,8 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
         padding: 0;
         transition: 0.3s ease-in-out;
         width: 100%;
-        margin:10px auto;
+        margin: 10px auto;
         text-align: center;
-      
       }
       .action-btns {
         display: none;
@@ -209,10 +214,7 @@ const toggleNavbar = () => (showMenu.value = !showMenu.value);
   }
   .hide {
     height: 300px !important;
-    background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23b40b0b' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    border-radius: 5px;
-
+    background-color: #fcf9f4;
     .item:first-child {
       padding-top: 40px !important;
     }

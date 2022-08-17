@@ -76,15 +76,20 @@ const data = ref([
         <div class="img">
           <img loading="lazy" :src="item.src" alt="" />
         </div>
+        <!-- Name  -->
         <p class="name">{{ item.name }}</p>
+        <!-- Price  -->
         <p class="price">{{ item.price }}</p>
       </div>
+      <!-- Card  -->
     </div>
+    <!-- Cards  -->
   </div>
   <!-- Tranding  -->
 </template>
 
 <style lang="scss" scoped>
+// Styles
 .tranding {
   max-width: 1500px;
   margin: 150px auto;
@@ -107,8 +112,15 @@ const data = ref([
       text-align: center;
       transition: 0.3s linear;
       border: 1px solid transparent;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      background: #fcf9f4;
+      &:nth-child(even) {
+        background: #f7f7f7;
+      }
       &:hover {
-        border: 1px solid #b40b0b46;
+        border: 1px solid #fce7e7;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
       cursor: pointer;
 
@@ -116,7 +128,7 @@ const data = ref([
         img {
           width: 250px;
           height: 250px;
-          object-fit: fill;
+          object-fit: contain;
         }
       }
       .name {
@@ -138,7 +150,9 @@ const data = ref([
   }
 }
 
-@media only screen and (max-width: 400px) {
+// Media queries
+
+@media only screen and (max-width: 500px) {
   .tranding {
     .title {
       font-size: 2rem;
@@ -149,7 +163,7 @@ const data = ref([
           img {
             width: 100%;
             height: 100%;
-            object-fit: fill;
+            max-width: 250px;
           }
         }
       }

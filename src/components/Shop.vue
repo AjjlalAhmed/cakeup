@@ -4,6 +4,7 @@ import { ref } from "@vue/reactivity";
 import shop1 from "../assets/images/shop-1.jpg";
 import shop2 from "../assets/images/shop-2.jpg";
 import shop3 from "../assets/images/shop-3.jpg";
+
 // Variables
 const data = ref([
   {
@@ -45,10 +46,12 @@ const data = ref([
             <!-- Card text  -->
             <p class="card-text">{{ item.text }}</p>
           </div>
+          <!-- Info  -->
         </div>
       </div>
       <!-- Card  -->
     </div>
+    <!-- Cards  -->
   </div>
   <!-- Shop  -->
 </template>
@@ -56,10 +59,10 @@ const data = ref([
 
 
 <style lang="scss" scoped>
+// Styles
 .shop {
   max-width: 1500px;
   margin: 50px auto;
-  
   .cards {
     display: flex;
     justify-content: space-between;
@@ -83,7 +86,7 @@ const data = ref([
         bottom: 50px;
         transition: 0.3s ease-in-out;
         .info {
-          background: #fff;
+          background-color: #fcf9f4;
           padding: 20px;
           border-radius: 5px;
           border: 1px solid #5555;
