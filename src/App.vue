@@ -7,7 +7,7 @@ import Footer from "./components/Footer.vue";
 
 <template>
   <!-- Container  -->
-  <div class="container mx-auto">
+  <div class="container">
     <!-- Navbar  -->
     <Navbar />
     <!-- View  -->
